@@ -1,0 +1,12 @@
+.element {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .buttons-csv{
+    padding: 0.25rem 1rem !important;
+    background: green !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 0.5rem !important;
+  }
