@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient} from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -7,12 +7,15 @@ import { Observable } from 'rxjs';
 })
 export class QueryService {
 
-  private apiUrl = 'http://localhost:5217/api/data/getAll';
+  private apiUrl = 'http://localhost:5217/api/data/getAll'; // Adjust the URL as needed
 
   constructor(private http: HttpClient) { }
 
-  executeQuery(query: string): Observable<any[]> {
-    return this.http.post<any[]>(this.apiUrl, query);
+  executeQuery(query: string, page: number, size: number): Observable<any> {
+    let params = new HttpParams()
+      .set('page', page.toString())
+      .set('size', size.toString());
+      // .set('search', searchQuery);
+    return this.http.post<any>(this.apiUrl, query, { params });
   }
-  
 }
