@@ -1,4 +1,4 @@
-SQL Query Executor with CSV Export
+# SQL Query Executor with CSV Export
 Project 
 
 This project allows users to execute SQL SELECT queries on a database and export the results in CSV format. The system ensures database safety by restricting users to only SELECT operations, preventing accidental changes or deletions. This tool is useful for team members who need database access but should not modify the data.
@@ -12,7 +12,7 @@ Features
     Backend: Built with Spring Boot and JDBC Template for efficient database interaction.
 
 
-Technologies Used
+# Technologies Used
 Backend
 
     Spring Boot: For building the backend REST API.
@@ -36,7 +36,7 @@ Prerequisites
     MySQL/PostgreSQL database
     Maven (for building the Spring Boot project)
 
-Steps to Run the Project
+# Steps to Run the Project
 
 1.Clone the Repository:
 
@@ -83,13 +83,13 @@ ng serve
 
 Visit http://localhost:4200 in your browser to access the frontend.
 
-Usage
+# Usage
 
     Enter your SQL SELECT query in the provided input field.
     Click on Execute to run the query.
     View the paginated results below the query box.
     Click Download CSV to export the results.
 
-Security
+# Security
 
 To ensure that only SELECT operations are performed, queries are parsed and validated before execution. Any non-SELECT statement is rejected to protect the database from accidental modification or deletion.
