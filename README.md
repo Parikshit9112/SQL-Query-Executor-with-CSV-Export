@@ -1,5 +1,5 @@
 SQL Query Executor with CSV Export
-Project Overview
+Project 
 
 This project allows users to execute SQL SELECT queries on a database and export the results in CSV format. The system ensures database safety by restricting users to only SELECT operations, preventing accidental changes or deletions. This tool is useful for team members who need database access but should not modify the data.
 Features
